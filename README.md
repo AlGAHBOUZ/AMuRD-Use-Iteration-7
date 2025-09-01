@@ -1,5 +1,5 @@
-# Multilingual Product Classification System -- Iter 7
-Automated product classification system using multilingual embeddings and semantic similarity for Arabic and English product names.
+# Classi-Fy
+An automated product classification system using multilingual embeddings and semantic similarity for Arabic and English product names.
 
 ## Overview
 The Multilingual Product Classification System is an AI-powered solution that automatically classifies products based on their names using semantic embeddings. The application leverages advanced multilingual embedding models to handle both Arabic and English product names, translates them when necessary, and performs classification using cosine similarity in vector space.
@@ -178,3 +178,4 @@ The system automatically calculates:
 - Batch processing sizes configurable for large datasets
 - Vector similarity thresholds adjustable
 - Memory optimization settings for large embedding tables
+
