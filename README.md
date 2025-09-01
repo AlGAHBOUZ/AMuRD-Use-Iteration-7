@@ -23,7 +23,7 @@ Key features:
 - **ML Framework**: sentence-transformers, scikit-learn
   
 ## Important Files:
-- **Core Pipeline**: `main.py` - Main processing pipeline with database operations
+- **Core Pipeline**: `app.py` - Main processing pipeline with database operations
 - **Model Definitions**: `modules/models.py` - AI model classes and configurations
 - **Database Operations**: `modules/db.py` - Teradata connection and query handling
 - **Utilities**: `utils.py` - Text processing and model loading utilities
@@ -31,6 +31,9 @@ Key features:
 - **Model Configs**: 
   - `e5_large_instruct_config.json` - E5 embedding model configuration
   - `opus_translation_config.json` - Translation model configuration
+- **Backup data Files**: 
+  - `joined_classes_dataset.csv` - In case the database takes too long to load, the code falls back to the local version
+  - `joined_products_dataset.csv` - In case the database takes too long to load, the code falls back to the local version
 
 ## Setup for Development
 
@@ -116,7 +119,7 @@ print("✅ Translation model loaded")
 
 ### Full Pipeline Mode (Default)
 ```python
-python main.py
+streamlit run app.py
 ```
 
 This runs the complete classification pipeline:

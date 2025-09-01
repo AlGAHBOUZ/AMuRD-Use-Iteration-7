@@ -9,15 +9,20 @@ import json
 from typing import List
 
 
-from constants import ALL_STOPWORDS, ALL_BRANDS, GPC_PATH, OPUS_TRANSLATION_CONFIG_PATH, PROMPT_PATH
-from modules.models import (
+from src.constants import ALL_STOPWORDS, ALL_BRANDS, GPC_PATH, PROMPT_PATH
+from src.modules.models import (
     SentenceEmbeddingModel, 
     SentenceEmbeddingConfig,
     OpusTranslationModel,
     OpusTranslationModelConfig,
     LLMModel, 
     LLMModelConfig,
-    HierarchicalGPCClassifier
+    TfidfClassifier,
+    Tfidf,
+    TfidfClassifierConfig,
+    HierarchicalGPCClassifier,
+    LogisticRegressionConfig,
+    WeightedLogisticRegressionClassifier
 )
 
 def remove_repeated_words(text):
@@ -96,6 +101,37 @@ def load_embedding_model(config_path: str):
 
     model = SentenceEmbeddingModel(config)
 
+    return model
+
+
+def load_tfidf_random_forest():
+    config = TfidfClassifierConfig()
+    model = TfidfClassifier(config) 
+
+    return model
+
+def load_tfidf():
+    config = TfidfClassifierConfig()
+    model = Tfidf(config) 
+
+    return model
+
+def load_logistic_regressiong():
+    special_weights = {"food beverage": 5.0}
+    config = LogisticRegressionConfig()
+    model = WeightedLogisticRegressionClassifier(
+        config=config, 
+        special_class_weights=special_weights,
+        default_weight=1.0
+    )
+    return model
+
+def load_logistic_regression_balanced():
+    config = LogisticRegressionConfig()
+    model = WeightedLogisticRegressionClassifier(
+        config=config,
+        use_balanced=True  
+    )
     return model
 
 def load_llm_model(config_path: str):

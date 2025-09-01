@@ -23,6 +23,10 @@ PROMPT_PATH = BASE_DIR / "prompt.txt"
 
 GPC_PATH = DATA_PATH / "GPCMay25.xlsx"
 
+JOINED_PRODUCTS_DATASET = DATA_PATH / "joined_products_dataset.csv"
+
+JOINED_CLASSES_DATASET = DATA_PATH / "joined_classes_dataset.csv"
+
 TRAIN_VAL_DATA_PATH = DATA_PATH / "train_val.csv"
 
 TRAIN_CLEANED_DATA_PATH = DATA_PATH / "train_cleaned.csv"
