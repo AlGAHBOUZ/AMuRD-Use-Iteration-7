@@ -31,10 +31,7 @@ Key features:
 - **Model Configs**: 
   - `e5_large_instruct_config.json` - E5 embedding model configuration
   - `opus_translation_config.json` - Translation model configuration
-- **Backup data Files**: 
-  - `joined_classes_dataset.csv` - In case the database takes too long to load, the code falls back to the local version
-  - `joined_products_dataset.csv` - In case the database takes too long to load, the code falls back to the local version
-
+  
 ## Setup for Development
 
 ### Conda Environment

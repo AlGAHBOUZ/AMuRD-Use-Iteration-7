@@ -14,3 +14,9 @@ tiktoken
 protobuf
 sentencepiece
 sacremoses
+torch
+transformers
+scipy
+requests
+streamlit
+chardet
