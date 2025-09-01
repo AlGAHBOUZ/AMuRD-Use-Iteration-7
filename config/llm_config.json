@@ -1,0 +1,8 @@
+{
+    "api_key": "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",
+    "model_name": "openai/gpt-4o-mini",
+    "api_url": "https://openrouter.ai/api/v1/chat/completions",
+    "temperature": 0.1,
+    "max_tokens": 100,
+    "top_p": 0.9
+}

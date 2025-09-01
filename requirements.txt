@@ -1,0 +1,16 @@
+accelerate
+teradataml
+numpy
+pandas
+matplotlib
+scikit-learn
+python-dotenv
+sentence-transformers
+huggingface-hub
+nltk
+dill
+openpyxl
+tiktoken
+protobuf
+sentencepiece
+sacremoses

@@ -1,0 +1,6 @@
+[2025-08-24 14:03:30] - logger:_log - INFO - Logger initialized. Logs will be saved to c:\Users\ss255385\OneDrive - Teradata Corporation\Desktop\AMuRD-Iteration-7\src\logs\borai_20250824_140330.log
+[2025-08-24 14:03:31] - logger:_log - INFO - TeradataDatabase instance initialized
+[2025-08-24 14:03:31] - logger:_log - INFO - Operation 'Database connection' started - Details: {'host': 'iteration7-gwyyqrtdecxxq4xk.env.clearscape.teradata.com', 'database': 'demo_user'}
+[2025-08-24 14:03:35] - logger:_log - INFO - Operation 'Database connection' completed
+[2025-08-24 14:03:45] - logger:_log - INFO - Operation 'Database disconnection' started
+[2025-08-24 14:03:45] - logger:_log - INFO - Operation 'Database disconection' completed
